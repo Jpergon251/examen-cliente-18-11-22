@@ -16,7 +16,7 @@ function Jugador (nombre,apellidos,nivel,puntuacion) {
         }else{
             this.puntuacion =+ 1;
         }
-        console.log("Jugador "+ this.name + " ha matado un zombie!" + " su puntuacion es "+puntuacion+" y su nivel es " + nivel);
+        console.log("Jugador "+ this.nombre + " ha matado un zombie!" + " su puntuacion es "+puntuacion+" y su nivel es " + nivel);
     }
     /**
      * Esta funcion es la misma que la anterior pero restando los puntos y niveles
@@ -30,19 +30,19 @@ function Jugador (nombre,apellidos,nivel,puntuacion) {
         }else{
             this.puntuacion =- 1;
         }
-        console.log("Jugador "+ this.name + " esta siendo atacado!" + " su puntuacion es "+puntuacion+" y su nivel es " + nivel);
+        console.log("Jugador "+ this.nombre + " esta siendo atacado!" + " su puntuacion es "+puntuacion+" y su nivel es " + nivel);
     }
     /**
      * Esta funcion indica que cuando el jugador llega a 0 es eliminado 
      * y se resetean sus puntuaciones
      */
     this.eliminado = function () {
-        console.log("Jugador "+ this.name +" eliminado!" + " su puntuacion es "+puntuacion+" y su nivel es " + nivel);
+        console.log("Jugador "+ this.nombre +" eliminado!" + " su puntuacion es "+puntuacion+" y su nivel es " + nivel);
         if (this.puntuacion == 0 && this.nivel == 0){
             this.puntuacion = 1;
             this.nivel = 1;
         }
-        alert("Jugador "+ this.name + " ha sido eliminado!")
+        alert("Jugador "+ this.nombre + " ha sido eliminado!")
     }
 }
 
