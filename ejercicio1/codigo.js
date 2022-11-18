@@ -50,5 +50,7 @@ let jugador1 = new Jugador("John", "Smith", 1, 1);
 let jugador2 = new Jugador("Martin", "Raymund", 1, 1);
 let jugador3 = new Jugador("Jose", "Perez", 1, 1);
 
+jugadores = [jugador1, jugador2, jugador3];
+
 jugador1.mataZombie()
 
