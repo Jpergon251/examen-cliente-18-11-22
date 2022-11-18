@@ -15,7 +15,8 @@ function isLeapYear(year1 ,year2) {
          * En caso de que el formato sea correcto procedemos a averiguar si un año es bisiesto
          * y si lo es, lo añadimos a una lista
          */
-       for(i = year1; i < year2; i++){
+        
+       for(i = Math.round(year1); i < Math.round(year2); i++){
             if(i % 4 == 0 || (i % 100 == 0 && i % 400 == 0)){
                 años_bisiestos.push(i);
             }
