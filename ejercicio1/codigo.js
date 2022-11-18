@@ -42,7 +42,7 @@ function Jugador (nombre,apellidos,nivel,puntuacion) {
             this.puntuacion = 1;
             this.nivel = 1;
         }
-        
+        alert("Jugador "+ this.name + " ha sido eliminado!")
     }
 }
 
